@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import javax.faces.bean.ApplicationScoped;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
+import javax.sql.DataSource;
 
-import org.apache.tomcat.jdbc.pool.DataSource;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -84,7 +84,7 @@ public class HibernateUtil implements Serializable{
 	
 	/**
 	 * 
-	 * @return Connection
+	 * @return Connection no InitialContext java:/comp/env/jdbc/datasource
 	 * @throws Exception
 	 */
 	public static Connection getConnection()  throws Exception {
@@ -103,5 +103,4 @@ public class HibernateUtil implements Serializable{
 		return (DataSource) context.lookup(JAVA_COMP_ENV_JDBC_DATA_SOURCE);
 	}
 	
-
 }

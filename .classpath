@@ -8,6 +8,5 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Bibliotecas"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
