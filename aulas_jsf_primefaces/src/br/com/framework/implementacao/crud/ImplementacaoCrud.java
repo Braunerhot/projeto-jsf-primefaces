@@ -23,8 +23,10 @@ public class ImplementacaoCrud<T> implements InterfaceCrud<T> {
 	private static SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 	
 	@Autowired
+	private JdbcTemplateImpl JdbcTemplate;
 	
-
+	// Aqui!	
+	
 	@Override
 	public void save(T obj) throws Exception {
 		// TODO Auto-generated method stub
