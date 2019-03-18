@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE xhtml PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Cadastro de Pessoas</title>
+<title>Sistema de Cadastros</title>
 </head>
 <h:body>
 	<h:form>
-		<h:outputLabel value="Nome: "/><br/>
-		<h:inputText id="cp_nome"/><br/>
-		<h:outputLabel value="Sobrenome: "/><br/>
-		<h:inputText id="cp_sobrenome"/><br/><br/>
-		<h:commandButton type="submit" value="Enviar"/>
-		<h:commandButton type="reset" value="Limpar"/>
+		<h2>Sistema de Cadastro</h2>
+		<h:commandButton value="Cadastro de Pessoas" action="pessoas"/><br/>
+		<h:commandButton value="Cadastro de Objetos" action="objetos"/><br/>
+		<h:commandButton value="Cadastro de Serviços" action="servicos"/><br/>
+		<h:commandButton value="Cadastro de Processos" action="processos"/>
 	</h:form>
 </h:body>
 </html>

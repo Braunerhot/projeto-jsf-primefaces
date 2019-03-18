@@ -59,8 +59,11 @@ public class ViewScope implements Scope, Serializable {
 		FacesRequestAttributes facesRequestAttributes = new FacesRequestAttributes(facesContext);
 		return facesRequestAttributes.resolveReference(name);
 	}
-
-	// Retorna o componente rais que está associado a esta solicitação(request).
+	
+	/* getViewRoot()
+	   Retorna o componente rais que estï¿½ associado a esta solicitaÃ§Ã£o(request).
+	   Retorna um Map que atua como a interface para o armazenamento de dados.
+	*/ 
 	private Map<String, Object> getViewMap() {
 		return FacesContext.getCurrentInstance() != null ?
 			   FacesContext.getCurrentInstance().getViewRoot().getViewMap() : new HashMap<String, Object>();
